@@ -1,0 +1,15 @@
+random_pokemon.content:
+  path: '/random-pokemon'
+  defaults:
+    _controller: '\Drupal\random_pokemon\Controller\RandomPokemonController::getRandomPokemon'
+    _title: 'Random Pokemon'
+  requirements:
+    _permission: 'poke permiso'
+
+random_pokemon.get_pokemon:
+  path: '/pokemon/{pokemon}'
+  defaults:
+    _controller: '\Drupal\random_pokemon\Controller\RandomPokemonController::getPokemon'
+    _title: 'Pokemon'
+  requirements:
+    _permission: 'poke permiso'
